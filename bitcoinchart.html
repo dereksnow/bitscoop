@@ -1,0 +1,141 @@
+<head>
+  <title>BitScoop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='http://fonts.googleapis.com/css?family=Merriweather|Lato' rel='stylesheet' type='text/css'>
+  <link rel="icon" href="favicon.ico?v=2" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
+</head>
+
+<body>
+  {{> header}}
+  <div class="container">
+  {{> hello}}
+<!--   <figure> -->
+    <div id="avgChart"></div>
+<!--     <figcaption>Weighted average Bitcoin data provided by BitcoinAverage. Current exchanges used for weighted average can found <a href="https://bitcoinaverage.com/markets.htm#USD-nomillibit">here</a>.</figcaption>
+  </figure>  -->                                  
+  <h2 id="info">Information</h2>
+  <h3 id="whatIsIt">What is Bitcoin?</h3>
+  <p>"Bitcoin" is a decentralized peer-to-peer(P2P) digital currency and cryptographic protocol which supports variety of applications.</p>
+  
+  <h3 id="whatDisP2P">What is a distibuted P2P digital currency?</h3>
+  <p>Decentralized P2P describes a network (computers that can exchange information) in which there is no central authority that controls the issuance/creation of the currency. Any computer that runs a freely available program can be part of consensus network which maintains a public ledger(the blockchain) of all bitcoin transactions - including the creation of new bitcoins.</p>
+  <p>Digital means that transactions are recorded by computers. In the case of bitcoin, all transactions are recorded, even though the persons associated with a transaction can be anonymous. This is in contrast to using cash or other types of money which don't require transactions to be recorded.</p> 
+  <p>It should also be noted that digital currencies are different from virtual currencies in that real tangible goods can be bought and sold using digital currencies.</p>
+  <p>
+<h3 id="whatCrypto">What is a cryptographic protocol?</h3>
+  <p>A protocol defines a set of rules, and when associated with computer networks a protocol defines the rules for exchanging messages between computers. Since the messages being exchanged have some value, it is important that the messages be transmitted securely, so that adversarial third parties cannot view the valuable information. This is where the cryptographic part comes in - cryptography, expressed succiently, is the science of secret writing. The cryptographic methods employed in the bitcoin protocol use advanced mathematics, making the transmission and creation of bitcoins extremely secure.</p>
+  <p>Checkout these free courses to learn more about cryptography:</p>
+  <ul>
+    <li><a href="https://www.udacity.com/course/cs387">Udacity's "Applied Cryptography"</a></li>
+    <li><a href="https://www.coursera.org/course/crypto">Coursera's "Cryptography"</a></li>
+  </ul>
+  <h3 id="createBitcoin">How are bitcoins created?</h3>
+  <p>New bitcoins are created as a reward to Bitcoin <a href="http://bitcoin.org/en/vocabulary#mining">miners</a> for expending computing power to solve difficult algorithms that are required to verify bitcoin transactions. These verifications require a consensus of the bitcoin network and are done to ensure that people cannot <a href="http://bitcoin.org/en/vocabulary#double-spend">double spend</a> bitcoins or conduct other fraudalent activities. New bitcoins are created on average every 10 minutes and as more computational resources are used in mining, the difficulty in mining increases. The current reward is 25 bitcoins, but this reward is halved every four years (12.5 bitcoins in 2017). </p>
+  <h3 id="supplyOfBitcoin">How many bitcoins can be created?</h3>
+  <p>
+  The Bitcoin protocol defines that no more than 21 million bitcoins will ever be created. This is in contrast to the U.S. dollar, British pound, European euro and the overwhelming majority of currencies in use today, which are created by a central authority (bank). Currencies that are created by a central authority are not bound by any hard limits, so the supply can be increased at will. 
+  </p>
+  <p>A little over half of the 21 million bitcoins have been mined (created), but current estimates project that the last bitcoin will not be mined until around 2140, due to the set rate increases in mining difficulty.</p>
+  <h3 id="acquireBitcoins">Acquiring Bitcoins</h3>
+  <p>There are several ways to acquire bitcoins. You can purchase bitcoins on an exchange or through a digital <a href="http://bitcoin.org/en/vocabulary#wallet">wallet</a>, purchase them <a href="https://localbitcoins.com/">locally</a>, receive them as payment, or earn them as a reward by <a href="https://en.bitcoin.it/wiki/Mining">mining</a>.</p>
+  <p>List of Popular Bitcoin exchanges</p>
+  <ul>
+    <li><a href="https://www.bitfinex.com/">Bitfinex</a></li>    
+    <li><a href="https://www.bitstamp.net/">Bitstamp</a></li>
+    <li><a href="https://btc-e.com/">BTC-E</a></li>
+    <li><a href="https://vip.btcchina.com/">BTC China</a></li>
+    <li><a href="https://www.mtgox.com/">Mt. Gox</a></li>
+  </ul>
+  <p>In the United States, <a href="https://coinbase.com/">Coinbase</a> is one of the easiest and most secure ways to purchase bitcoins. They also provide services for merchants to easily accept bitcoin.</p>
+  
+  <h3 id="bitcoinMoney">Bitcoin as money?</h3>
+  
+  <p>Money means different things to people, but it's generally defined as a good that has gained wide acceptance as final payment for goods and services. More specifically, money has traditionally served three functions:</p>
+  <ul>
+    
+    <li>A store of value. Assume you get paid $800 for working 40 hours. You can hold that $800 for a period of time and later purchase some goods and services. As an example, say $800 can pay for one of month rent, but a year later it only pays for 90% of the rent. This difference could be due to an increase in demand (without a proportional increase in supply) for housing and/or a loss in value of the dollar due to inflation. So, most currencies considered money are not a perfect store of value.</li>
+
+    <li>A medium of exchange. If you try to purchase a new big screen TV with a truck full of chickens, your method of payment probably won't be accepted and you may get a few strange looks. Money has to be widely accepted as final payment. The medium of exchange function of money is one of the main advantages over a barter system.</li>
+    
+    <li>A unit of account. This means that when you go to the grocery store, you don't see items priced using various units - 0.2 ounces of silver for a gallon of milk, 1 chicken for 3 loaves of bread etc. Everything you see is priced in dollars or euros or whatever the "unit of account" happens to be for that location. In order for something to function as a unit of account it must be divisble and fungible.
+        <ul> 
+            <li>Divisibility means that you can create smaller units without loss of value. Two halves of a one bicycle doesn't have the same value as one whole bicycle. Cut one ounce of gold in half and the two pieces are worth the same as one whole ounce of gold.
+            </li>
+            <li> Fungibility means that one unit is equivalent to any other unit of the same amount. One ounce of gold mined in South America is equivalent to one ounce of gold mined in Africa, but one acre of land in Siberia is not equal to one acre of land in Monaco.</li>
+            <li>Divisibilty and fungability are two of the reasons why gold has functioned as money, while diamonds and other precious gems have not.</li>
+        </ul>
+    </li>
+  </ul>
+  <p>So, what about Bitcoin as money? Bitcoin has many of the desired properties of money - scarcity, divisibility, fungibility, easily recognizible, extremely low cost to store, along with <a href="https://en.bitcoin.it/wiki/Ideal_Properties_of_Digital_Commodities">others properties</a>. However, bitcoin isn't widely used and accepted as a medium of exchange, but its <a href="http://coinmap.org/">adoption</a> by merchants and consumers is increasing rapidly.</p>
+  
+  <h3 id="whyUseBitcoin">Why should merchants and consumers use Bitcoin?</h3>
+  
+  <p>One reason merchants and consumers should consider using Bitcoin, is the very low to no transaction fees. Typically a merchant will pay 2-3% of each sell to credit card companies for transaction fees, and these costs are passed on to the consumer. By using Bitcoins the merchant saves money and in turn will likely lower their prices to attract more customers.</p>
+
+  <h3 id="otherApps">Bitcoin, more than a digital currency</h3>
+
+  <p>While Bitcoin is potentially disruptive to currency markets, the protocol has many latent features that are just starting to be used and could be disruptive to a wide varity of markets. The protocol was designed from the beginning to support a variety of transaction types: escrow, bonded contracts, third party arbitation, multi-party signature, etc. The difference is that the contracts would be carried out by the Bitcoin consensus network without the need for human judgement and for a small fraction of the cost associated with traditional legal contracts.</p> 
+  <p>Mike Hearn, one of the Bitcoin core developers, discusses many of the non-currency applications that will be possible with Bitcoin in this <a href="http://youtu.be/mD4L7xDNCmA">video</a>.</p>
+
+  <h3 id="resources">Resources</h3>
+  <p>Listed below are some resources where you can learn more about Bitcoin.</p>
+  <ul>
+    <li><a href="http://bitcoin.org/">Official Bitcoin Site</a></li>
+    <li><a href="https://en.bitcoin.it/">Bitcoin wiki</a></li>
+    <li><a href="http://bitcoincharts.com/">Bitcoin Charts - Financial and technical data about Bitcoin</a></li>
+    <li><a href="http://blockchain.info/">Blockchain - Navigate the Bitcoin blockchain (ledger)</a></li>
+    <li><a href="https://bitcoinaverage.com/">BitcoinAverage - Weighted average price of Bitcoin</a></li>
+  </ul>
+
+
+  <div class="footer">
+    <hr/>
+    <p class="footer-content">BitScoop is designed, implemented and maintained by Derek Snow. Bitscoop is hosted by <a href="http://meteor.com">Meteor</a> and uses Bitcoin data from <a href="https://bitcoinaverage.com/">BitcoinAverage</a>. 
+  </div>
+</div>
+</body>
+
+<template name="hello">
+    <div class="row">
+        <div class="col-md-6 ">
+            <span class="current-avg-text">Average Price </span><span class="current-avg-price"><strong>${{nowAvgData}}</strong></span>
+        </div>
+        <div class="col-md-3 col-md-offset-2" id="chartControls">
+            <input type="button" class="dayChart btn btn-primary btn-sm" value="Day" />
+            <input type="button" class="monthChart btn btn-primary btn-sm" value="Month" />
+            <input type="button" class="allChart btn btn-primary btn-sm" value="All" />
+            <!--<p>Chart updates every {{updateInfo}}.</p> -->
+        </div>
+    </div>
+
+    
+</template>
+
+<template name="header">  
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand">BitScoop</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>        
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#top">Charts</a>
+          </li>
+          <li>
+            <a href="#info">Information</a>
+          </li>
+          <li>
+            <a href="#resources">Resources</a>
+          </li>          
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>

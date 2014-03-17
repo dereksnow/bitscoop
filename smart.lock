@@ -1,0 +1,21 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "bootstrap-readable": {},
+      "jquery-scrollTo": {}
+    },
+    "packages": {
+      "bootstrap-readable": {
+        "git": "https://github.com/and-fri/meteor-bootstrap-readable.git",
+        "tag": "v0.0.2",
+        "commit": "ec5a6a041e9def4423aaf9ea842fdf11e6f4939b"
+      },
+      "jquery-scrollTo": {
+        "git": "https://github.com/nate-strauser/meteor-jquery.scrollTo.git",
+        "tag": "v1.4.6",
+        "commit": "ab6f05c43e2a54fc7711e5a2ff8daa45e5ff4322"
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+body { 
+    padding-top: 70px;
+    background-color: #FCFCFC;
+    color: #383725;
+
+}
+
+.navbar-default {
+    background-color: #82879E;
+    border-color: transparent;
+}
+
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
+color: #FFF;
+}
+
+.navbar-default .navbar-nav > li > a:hover   {
+color: #FFF784;
+}
+
+.navbar-default .navbar-brand:hover   {
+color: #FFF;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+background-color: #FFF;
+}
+
+a {
+    color: #1563EB;
+}
+
+hr {
+border-top: 1px solid #4B4B4B;
+}
+
+figcaption {
+    font-size: 12px;
+    margin-left: 50px;
+}
+
+.footer-content {
+    color: #4B4B4B;
+}
+
+p.footer-content > a {
+    color: #4287FF;
+}
+
+.btn-primary {
+    color: #FFF;
+    background-color: #82879E;
+    border-color: #4B4B4B;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    color: #FFF;
+    background-color: #686C7E;
+    border-color: #4B4B4B;
+}
+
+.current-avg-price {
+    font-family: "Lato";
+    font-size: 40px;
+    color: #383725;
+}
+
+.current-avg-text {
+    font-family: "Raleway";
+    font-size: 40px;
+    color: #383725;
+}
+
+div#chartControls p {
+    font-family: "Raleway";
+    font-size: 12px;
+}
+
+li:not(ul.navbar-nav), p {
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+}
+
+div#avgChart {
+    font-family: sans-serif;
+    font-size: 10px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: #4B4B4B;
+  stroke-width: 1px;
+}
+
+.area {
+    fill: #82879E;
+}
